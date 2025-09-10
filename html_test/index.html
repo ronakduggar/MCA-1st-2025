@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <form>
+      <!-- Text Input -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br /><br />
+
+      <!-- Email Input -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <!-- Password Input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+
+      <!-- Checkbox Input -->
+      <label
+        ><input type="checkbox" name="newsletter" /> Subscribe to
+        Newsletter</label
+      >
+      <br /><br />
+
+      <!-- Radio Buttons -->
+      <p>Gender:</p>
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label>
+      <br /><br />
+
+      <!-- Submit and Reset Buttons -->
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

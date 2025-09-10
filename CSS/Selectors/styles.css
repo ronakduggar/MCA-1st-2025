@@ -1,0 +1,27 @@
+/* Element selector */
+/* Class selector */ 
+/* ID Selector */
+/* universal selector */
+/* attribute selector */
+
+
+/* #main-body{
+    background-color: lightgreen;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+} */
+
+/* *{
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+} */
+
+h1[draggarble]{
+    color: purple;
+}
+
+p[draggable]{
+    color:purple
+}
+
