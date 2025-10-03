@@ -17,11 +17,15 @@
     text-align: center;
 } */
 
-h1[draggarble]{
+/* h1[draggarble]{
     color: purple;
 }
 
 p[draggable]{
     color:purple
-}
+} */
 
+.red .text{
+    color:orange
+
+}

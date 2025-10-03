@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Image Example</title>
+    <style>
+      .custom-border {
+        width: 300px;
+        height: 150px;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        border-width: 20px; /* Required for border-image */
+        border-style: solid; /* Required for border-image to work */
+
+        /* Applying custom border image */
+        border-image: url("https://i.postimg.cc/6qB6hP9s/border-pattern.png") 30
+          round;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Custom Border Example</h2>
+    <div class="custom-border">This box has a custom image border!</div>
+  </body>
+</html>

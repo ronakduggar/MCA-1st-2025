@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Shadow & Box Shadow Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 50px;
+      }
+
+      /* Box with box-shadow */
+      .card {
+        width: 300px;
+        margin: 0 auto 40px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(61, 52, 89, 0.3); /* shadow around the box */
+      }
+
+      /* Text with text-shadow */
+      .shadow-text {
+        font-size: 36px;
+        color: #333;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* shadow behind the text */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <p class="shadow-text">Shadowed Text</p>
+      <p>This box also has a shadow!</p>
+    </div>
+  </body>
+</html>

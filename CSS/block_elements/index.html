@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block vs Inline vs Inline-Block</title>
+    <style>
+      .box {
+        background: lightblue;
+        border: 2px solid navy;
+        margin: 5px;
+        padding: 10px;
+      }
+      .block {
+        display: block;
+        width: 200px;
+        height: 50px;
+      }
+      .inline {
+        display: inline;
+        background: lightcoral;
+        padding: 10px;
+        margin: 5px;
+      }
+      .inline-block {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        background: lightgreen;
+        margin: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Block Elements</h2>
+    <div class="box block">Block 1</div>
+    <div class="box block">Block 2</div>
+    <p>👉 Notice: They appear stacked on new lines and take full width.</p>
+
+    <hr />
+
+    <h2>Inline Elements</h2>
+    <span class="box inline">Inline 1</span>
+    <span class="box inline">Inline 2</span>
+    <span class="box inline">Inline 3</span>
+    <p>
+      👉 Notice: They sit next to each other, but you can’t control
+      width/height.
+    </p>
+
+    <hr />
+
+    <h2>Inline-Block Elements</h2>
+    <span class="box inline-block">Inline-Block 1</span>
+    <span class="box inline-block">Inline-Block 2</span>
+    <span class="box inline-block">Inline-Block 3</span>
+    <p>
+      👉 Notice: They sit side by side like inline, but you can set width &
+      height.
+    </p>
+  </body>
+</html>

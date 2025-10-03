@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Example</title>
+    <style>
+      .btn {
+        background-color: lightblue;
+        color: black;
+        padding: 10px 20px;
+        border: 2px solid navy;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease; /* smooth effect */
+      }
+
+      /* Change background and color when hovered */
+      .btn:hover {
+        background-color: navy;
+        color: white;
+        transform: scale(1.1); /* slightly enlarges the button */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hover Example</h2>
+    <a href="#" class="btn">Hover Me!</a>
+  </body>
+</html>

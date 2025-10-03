@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Backgrounds Example</title>
+    <style>
+      .multi-bg {
+        width: 600px;
+        height: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        line-height: 360px;
+
+        /* Multiple backgrounds */
+        background-image: url("https://i.postimg.cc/8kZ1h2kF/pattern.png"),
+          /* top layer */ url("https://i.postimg.cc/MG1j2c7b/photo.jpg"); /* bottom layer */
+        background-repeat: repeat, no-repeat;
+        background-position: top left, center;
+        background-size: 100px 100px, cover;
+        background-color: #333; /* fallback color */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="multi-bg">Creative Layered Background</div>
+  </body>
+</html>
