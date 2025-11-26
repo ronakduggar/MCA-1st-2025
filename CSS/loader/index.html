@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        border-top: 2px solid red;
+        animation: loader 2s linear infinite;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box .inner {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 3px solid rgba(11, 5, 5, 0.08);
+        border-top: 3px solid #00bcd4;
+        animation: inner-loader 1s linear infinite reverse;
+        position: absolute;
+      }
+
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes inner-loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out, background-color 0.5s ease;
+      }
+
+      button:hover {
+        background-color: red;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner"></div>
+    </div>
+    <button>Submit</button>
+  </body>
+</html>

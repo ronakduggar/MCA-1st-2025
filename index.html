@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body {
+        padding: 0;
+        margin: 0;
+      } */
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        /* background-color: red; */
+        border-radius: 50%;
+        border-top: 2px solid red;
+        animation: rotate 2s ease-in-out infinite;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      button {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        transition: 0.5s ease, transform o.5s ease;
+      }
+      button:hover {
+        background-color: red;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <button>Submit</button>
+  </body>
+</html>
